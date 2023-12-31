@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+<body>
+
+<script src="./104-1_files/jquery.min.js" type="text/javascript"></script>
+<script src="./104-1_files/104wScratchPad.js" type="text/javascript"></script>
+
+<div id="wScratchPad" style="display:inline-block; position:relative; border:solid black 1px;">
+    <div style="position: relative; width: 350px; height: 200px; cursor: url(&quot;https://peacepopo.net/wp-content/uploads/104coin.png&quot;), default; background-image: url(&quot;https://peacepopo.net/wp-content/uploads/46-01.gif&quot;);">
+        <canvas width="350" height="200" style="cursor: url(&quot;https://peacepopo.net/wp-content/uploads/104coin.png&quot;), default;">
+        </canvas>
+    </div>
+</div>
+
+<a id="reset" href="javascript:reset();">リセット</a>
+<a href="javascript:clear();">クリア</a>
+
+<script type="text/javascript">
+    $("#wScratchPad").wScratchPad({width:350,height:200,image:'https://peacepopo.net/wp-content/uploads/46-01.gif',color:'#000',cursor:'https://peacepopo.net/wp-content/uploads/104coin.png',size:10});function reset(){$("#wScratchPad").wScratchPad('reset');}function clear(){$("#wScratchPad").wScratchPad('clear');}
+</script>
+
+
+</body></html>
