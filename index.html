@@ -12,13 +12,23 @@
 		<button onclick="reset();">もう一回</button>
 		<button onclick="clearpad();">全削り</button>
 		<script type="text/javascript">
-			$("#wScratchPad").wScratchPad({width:350,height:200,image:'https://peacepopo.net/wp-content/uploads/46-01.gif',color:'#808080',cursor:'./images/coin.png',size:10});
+			const results = [
+				'./images/omikuji_daikichi.png',
+				'./images/omikuji_chuukichi.png',
+				'./images/omikuji_syoukichi.png',
+				'./images/omikuji_kichi.png',
+				'./images/omikuji_suekichi.png',
+				'./images/omikuji_kyou.png',
+				'./images/omikuji_daikyou.png'
+			];
+			var rNo = Math.floor(Math.random() * results.length);
+			$("#wScratchPad").wScratchPad({width:181,height:400,image:results[rNo],color:'#808080',cursor:'./images/coin.png',size:10});
 			function reset(){
-				console.log("疎通1");
+				rNo = Math.floor(Math.random() * results.length);
+				$("#wScratchPad").wScratchPad('image',results[rNo]);
 				$("#wScratchPad").wScratchPad('reset');
 			}
 			function clearpad(){
-				console.log("疎通2");
 				$("#wScratchPad").wScratchPad('clear');
 			}
 		</script>
