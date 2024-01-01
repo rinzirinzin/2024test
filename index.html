@@ -2,21 +2,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
 <body>
 
-<script src="./104-1_files/jquery.min.js" type="text/javascript"></script>
-<script src="./104-1_files/104wScratchPad.js" type="text/javascript"></script>
+<script src="./javascript/jquery.min.js" type="text/javascript"></script>
+<script src="./javascript/104wScratchPad.js" type="text/javascript"></script>
 
 <div id="wScratchPad" style="display:inline-block; position:relative; border:solid black 1px;">
 </div>
-
+<br>
 <a id="reset" href="javascript:reset();">リセット</a>
 <a href="javascript:clear();">クリア</a>
 
 <script type="text/javascript">
-    $("#wScratchPad").wScratchPad({width:350,height:200,image:'https://peacepopo.net/wp-content/uploads/46-01.gif',color:'#000',cursor:'https://peacepopo.net/wp-content/uploads/104coin.png',size:10});function reset(){$("#wScratchPad").wScratchPad('reset');}function clear(){$("#wScratchPad").wScratchPad('clear');}
+    $("#wScratchPad").wScratchPad({width:350,height:200,image:'https://peacepopo.net/wp-content/uploads/46-01.gif',color:'#808080',cursor:'https://peacepopo.net/wp-content/uploads/104coin.png',size:10});
+	function reset(){
+		$("#wScratchPad").wScratchPad('reset');
+	}
+	function clear(){
+		$("#wScratchPad").wScratchPad('clear');
+	}
 </script>
+<div class="snow">●</div>
+<div class="snow snow2nd">●</div>
 
-
-</body></html>
+</body>
+</html>
