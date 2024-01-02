@@ -36,11 +36,19 @@
 
 body{
     background-image:linear-gradient(90deg,#f10000 50%,white 51%);
-    background-size:200px 200px;
+    background-size:100px 100px;
 }
 
 #wScratchPad{
-    display:inline-block;
+    display: flex;
     position:relative;
-    border:solid black 1px;
+    /*border:solid black 1px;*/
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#scratchButton{
+    text-align: center;
 }
