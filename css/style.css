@@ -65,10 +65,16 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: space-around;
+    margin-bottom: 5px;
 }
 
 #scratchButton {
     text-align: center;
+}
+
+button{
+    color:black;
+    background-color: whi;
 }
 
 #header {
