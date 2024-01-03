@@ -51,6 +51,12 @@
     }
 }
 
+@font-face {
+    font-family: 'myfonts'; /* 瀞ノグリッチ黒体 */
+    src: url('./fonts/玉ねぎ楷書激無料版v7改.ttf');
+}
+
+
 body {
     background-image: linear-gradient(90deg, #f10000 50%, white 51%);
     background-size: 50px 50px;
@@ -78,9 +84,7 @@ button{
 }
 
 #header {
-    font-family: 'M PLUS 1', sans-serif;
-    font-family: 'Shippori Mincho B1', serif;
-    font-family: 'Zen Maru Gothic', serif;
+    font-family: 'myfonts';
     font-weight: bold;
     text-align: center;
     width: 100%;
